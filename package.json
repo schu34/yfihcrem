@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/schu34/yfihcrem/issues"
   },
-  "homepage": "https://github.com/schu34/yfihcrem#readme"
+  "homepage": "https://github.com/schu34/yfihcrem#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
