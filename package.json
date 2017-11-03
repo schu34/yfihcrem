@@ -1,0 +1,20 @@
+{
+  "name": "yfihcrem",
+  "version": "1.0.0",
+  "description": "merch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schu34/yfihcrem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schu34/yfihcrem/issues"
+  },
+  "homepage": "https://github.com/schu34/yfihcrem#readme"
+}
