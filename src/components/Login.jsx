@@ -15,7 +15,9 @@ import                                               '../css/App.css';
 class Login extends Component {
   render() {
     return (
-     <p> this is the Login</p>
+     <Row>
+       <Col mdOffset={4} md={4}></Col>
+     </Row>
     );
   }
 }
