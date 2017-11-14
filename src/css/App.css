@@ -41,7 +41,8 @@ html, body, #app, #app>div {
 }
 
 .navbar{
-margin-bottom: 0px !important;
+  margin-bottom: 0px !important;
+  height: 55px;
 }
 
 nav{
