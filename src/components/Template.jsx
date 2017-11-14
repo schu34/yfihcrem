@@ -38,7 +38,7 @@ const Template = ({children, location}) => (
         </Navbar>
 
         <Row className="show-grid full-height">
-          <Col md={2} className="sidebar">
+          <Col xs={2} className="sidebar">
             <Nav className="herp">
               <NavItem eventKey={1} href="/dashboard"><img src={location.pathname.split("/")[1] === 'dashboard' ? dashboard_on: dashboard_off} />Dashboard</NavItem>
               <NavItem eventKey={2} href="/products"><img src={location.pathname.split("/")[1] === 'products' ? products_on : products_off} />Products</NavItem>
@@ -48,7 +48,7 @@ const Template = ({children, location}) => (
             </Nav>
           </Col>
 
-          <Col md={6}>
+          <Col xs={6}>
             <div>{children}</div>
           </Col>
         </Row>
