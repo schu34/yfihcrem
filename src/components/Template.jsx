@@ -44,17 +44,18 @@ const Template = ({children, location}) => (
          </Navbar.Header>
         </Navbar>
 
-        <Row className="show-grid">
-          <Col md={2} className="sidebar">
+        <Row className="show-grid full-height">
+          <Col xs={2} className="sidebar">
             <Nav className="herp">
               <NavItem eventKey={1} href="/dashboard"><img src={location.pathname.split("/")[1] === 'dashboard' ? dashboard_on: dashboard_off} />Dashboard</NavItem>
               <NavItem eventKey={2} href="/products"><img src={location.pathname.split("/")[1] === 'products' ? products_on : products_off} />Products</NavItem>
               <NavItem eventKey={3} href="/store"><img src={location.pathname.split("/")[1] === 'store' ? store_on : store_off} />Store</NavItem>
               <NavItem eventKey={4} href="/analytics"><img src={location.pathname.split("/")[1] === 'analytics' ? analytics_on: analytics_off} />Analytics</NavItem>
-              <NavItem eventKey={5} href="/settings"><img src={location.pathname.split("/")[1] === 'settings' ? settings_on : settings_off} />Settings</NavItem>
+              <NavItem eventKey={5} href="/settings" className="sidebar-settings"><img src={location.pathname.split("/")[1] === 'settings' ? settings_on : settings_off} />Settings</NavItem>
             </Nav>
           </Col>
 
+<<<<<<< HEAD
           <Col md={6}>
             <div>
               <Switch>
@@ -65,6 +66,10 @@ const Template = ({children, location}) => (
                 <Route path="/settings" component={Settings} /> 
               </Switch>
             </div>
+=======
+          <Col xs={6}>
+            <div>{children}</div>
+>>>>>>> ec8a9146698eb9c55b516630cf0febf04e15b35d
           </Col>
         </Row>
 

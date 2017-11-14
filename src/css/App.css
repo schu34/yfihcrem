@@ -1,5 +1,12 @@
 html, body, #app, #app>div {
-  height: 100%
+  height: 100%;
+  color: #939393;
+}
+
+a, a:hover, a:visited{
+    color: #8BC34A;
+    font-weight: bold;
+    text-decoration: none !important;
 }
 
 .App {
@@ -41,7 +48,8 @@ html, body, #app, #app>div {
 }
 
 .navbar{
-margin-bottom: 0px !important;
+  margin-bottom: 0px !important;
+  height: 55px;
 }
 
 nav{
@@ -52,6 +60,8 @@ nav{
 .sidebar{
   height: 100%;
   background-color: #F2F2F2;
+  padding: 10px 0px 0px 20px;
+  width: 200px;
 }
 
 .sidebar img{
@@ -62,8 +72,25 @@ nav{
 .sidebar a{
   color: #939393;
   font-weight: bold;
-
+  line-height: 25px;
 }
 .main-container{
   height: 100%;
+}
+
+.full-height{
+  height: 100%;
+}
+
+.sidebar-active{
+  color: #8BC34A !important;
+}
+
+.faqs{
+  text-align: center;
+}
+
+.sidebar-settings{
+  position: fixed !important;
+  bottom: 0;
 }
