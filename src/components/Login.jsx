@@ -37,7 +37,7 @@ class Login extends Component {
           </div>
           <Button classname="button">Login</Button>
           <Row>
-            <Col md={6}>google sign .   in</Col> {/*TODO: needs icons*/}
+            <Col md={6}>google signin</Col> {/*TODO: needs icons*/}
             <Col md={6}>facebook signin</Col>
           </Row>
         </Col>

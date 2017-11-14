@@ -37,8 +37,8 @@ class App extends Component {
             <Route path="/signup" component={Signup} />
             <Route path="/forgotPassword" component={ForgotPassword} />
             <Route path="/dashboard" component={Dashboard} />
-            <Route path="/store/:storeId" component={Store} />
-            <Route path="/products/:productId" component={Product} />
+            <Route path="/:storeId" component={Store} />
+            <Route path="/:storId/:productId" component={Product} />
             <Route path="/analytics" component={Analytics} />
             <Route path="/settings" component={Settings} />
           </Grid>
