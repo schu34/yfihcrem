@@ -64,7 +64,7 @@ nav{
 .sidebar a{
   color: #939393;
   font-weight: bold;
-
+  line-height: 25px;
 }
 .main-container{
   height: 100%;
@@ -72,4 +72,8 @@ nav{
 
 .full-height{
   height: 100%;
+}
+
+.sidebar-active{
+  color: #8BC34A !important;
 }
