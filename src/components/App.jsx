@@ -31,18 +31,18 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Switch>
-          <Grid>
+        <Grid>
+          <Switch>
             <Route path="/login" component={Login} />
             <Route path="/signup" component={Signup} />
             <Route path="/forgotPassword" component={ForgotPassword} />
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/:storeId" component={Store} />
-            <Route path="/:storId/:productId" component={Product} />
+            <Route path="/:storeId/:productId" component={Product} />
             <Route path="/analytics" component={Analytics} />
             <Route path="/settings" component={Settings} />
-          </Grid>
-        </Switch>
+          </Switch>
+        </Grid>
       </Router>
     );
   }

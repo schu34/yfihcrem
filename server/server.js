@@ -21,7 +21,7 @@ app.use("/payments", paymentRouter);
 const port = process.env.PORT || 6969
 
 app.listen(port, (err, res)=>{
-    
+    console.log("listening on port " + port);
 })
 
 
