@@ -37,7 +37,7 @@ const Template = ({children, location}) => (
          </Navbar.Header>
         </Navbar>
 
-        <Row className="show-grid">
+        <Row className="show-grid full-height">
           <Col md={2} className="sidebar">
             <Nav className="herp">
               <NavItem eventKey={1} href="/dashboard"><img src={location.pathname.split("/")[1] === 'dashboard' ? dashboard_on: dashboard_off} />Dashboard</NavItem>

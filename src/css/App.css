@@ -53,6 +53,7 @@ nav{
 .sidebar{
   height: 100%;
   background-color: #F2F2F2;
+  padding: 10px 0px 0px 20px;
 }
 
 .sidebar img{
@@ -66,5 +67,9 @@ nav{
 
 }
 .main-container{
+  height: 100%;
+}
+
+.full-height{
   height: 100%;
 }
