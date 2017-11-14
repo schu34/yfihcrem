@@ -17,7 +17,7 @@ class Store extends Component {
   render() {
     return (
     <div>
-      <Template>
+      <Template location={this.props.location}>
 
         <div>
           <h1>This is a store</h1>

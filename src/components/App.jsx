@@ -19,7 +19,7 @@ import Signup from "./Signup";
 import ForgotPassword from "./ForgotPassword";
 import Dashboard from "./Dashboard";
 import Store from "./Store";
-import Product from "./Product";
+import Products from "./Products";
 import Analytics from "./Analytics";
 import Settings from "./Settings";
 
@@ -38,9 +38,10 @@ class App extends Component {
             <Route path="/forgotPassword" component={ForgotPassword} />
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/:storeId" component={Store} />
-            <Route path="/:storeId/:productId" component={Product} />
+            <Route path="/:storeId/:productId" component={Products} />
             <Route path="/analytics" component={Analytics} />
             <Route path="/settings" component={Settings} />
+            <Route path="/products" component={Products} />
           </Switch>
         </Grid>
       </Router>
