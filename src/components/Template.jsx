@@ -55,7 +55,6 @@ const Template = ({children, location}) => (
             </Nav>
           </Col>
 
-<<<<<<< HEAD
           <Col md={6}>
             <div>
               <Switch>
@@ -66,10 +65,6 @@ const Template = ({children, location}) => (
                 <Route path="/settings" component={Settings} /> 
               </Switch>
             </div>
-=======
-          <Col xs={6}>
-            <div>{children}</div>
->>>>>>> ec8a9146698eb9c55b516630cf0febf04e15b35d
           </Col>
         </Row>
 
