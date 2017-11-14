@@ -20,6 +20,8 @@ import ForgotPassword from "./ForgotPassword";
 import Dashboard from "./Dashboard";
 import Store from "./Store";
 import Product from "./Product";
+import Analytics from "./Analytics";
+import Settings from "./Settings";
 
 //css
 import "bootstrap/dist/css/bootstrap.css";
@@ -37,6 +39,8 @@ class App extends Component {
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/store/:storeId" component={Store} />
             <Route path="/products/:productId" component={Product} />
+            <Route path="/analytics" component={Analytics} />
+            <Route path="/settings" component={Settings} />
           </Grid>
         </Switch>
       </Router>

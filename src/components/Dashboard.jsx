@@ -37,7 +37,11 @@ const right_side_text = `Some widget of some sort? Maybe blog post?`
 
 
 function blog_template(val){
-  return(<div>  <p> <img src={val["image"]} /> {val["title"]} </p> <p> {val["description"]} </p> </div>)
+  return(
+  <div>
+    <p> <img src={val["image"]} /> {val["title"]} </p>
+    <p> {val["description"]} </p>
+  </div>)
 }
 
 var best_items = my_array.map(function(val){ return <p> <img src={val["image"]} /> {val["item"] + ": " + val["quantity"]} sold</p> })

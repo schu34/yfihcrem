@@ -29,7 +29,7 @@ const Template = ({children}) => (
         <Navbar>
          <Navbar.Header>
            <Navbar.Brand>
-             <a href="/">Merchify</a>
+             <a href="/dashboard">Merchify</a>
            </Navbar.Brand>
          </Navbar.Header>
         </Navbar>
@@ -37,9 +37,9 @@ const Template = ({children}) => (
         <Row className="show-grid">
           <Col md={2}>
             <Nav className="herp">
-              <NavItem eventKey={1} href="/"><img src={dashboard_off} />Dashboard</NavItem>
-              <NavItem eventKey={2} href="/products"><img src={products_off} />Products</NavItem>
-              <NavItem eventKey={3} href="/store"><img src={store_off} />Store</NavItem>
+              <NavItem eventKey={1} href="/dashboard"><img src={dashboard_off} />Dashboard</NavItem>
+              <NavItem eventKey={2} href="/products/1"><img src={products_off} />Products</NavItem>
+              <NavItem eventKey={3} href="/store/1"><img src={store_off} />Store</NavItem>
               <NavItem eventKey={4} href="/analytics"><img src={analytics_off} />Analytics</NavItem>
               <NavItem eventKey={5} href="/settings"><img src={settings_off} />Settings</NavItem>
             </Nav>

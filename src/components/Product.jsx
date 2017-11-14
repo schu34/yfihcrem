@@ -4,6 +4,7 @@ import { LinkContainer }                            from 'react-router-bootstrap
 import { BrowserRouter as Router, Route, Switch, Link }     from "react-router-dom";
 import { connect }                                  from "react-redux";
 import { bindActionCreators }                       from "redux";
+import Template from './Template';
 
 //components
 
@@ -15,7 +16,15 @@ import                                               '../css/App.css';
 class Product extends Component {
   render() {
     return (
-     <p> this is the Product</p>
+    <div>
+      <Template>
+
+        <div>
+          <h1>This is a product</h1>
+        </div>
+
+      </Template>
+    </div>
     );
   }
 }
