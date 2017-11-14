@@ -1,3 +1,7 @@
+html, body, #app, #app>div {
+  height: 100%
+}
+
 .App {
   text-align: center;
 }
@@ -25,4 +29,41 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.no-padding{
+  padding: 0 !important;
+}
+
+.nav-logo{
+  width: 115px;
+  margin-top: -2px;
+}
+
+.navbar{
+margin-bottom: 0px !important;
+}
+
+nav{
+  background-color: #232325 !important;
+  border-radius: 0 !important;
+}
+
+.sidebar{
+  height: 100%;
+  background-color: #F2F2F2;
+}
+
+.sidebar img{
+  height: 20px;
+  margin-right: 10px;
+}
+
+.sidebar a{
+  color: #939393;
+  font-weight: bold;
+
+}
+.main-container{
+  height: 100%;
 }
