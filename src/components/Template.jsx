@@ -9,6 +9,19 @@ import { Nav,
         Col
         }                  from 'react-bootstrap';
 
+//images
+const analytics_on = require('../images/analytics-green.png')
+const analytics_off = require('../images/analytics.png')
+const dashboard_on = require('../images/dashboard-green.png')
+const dashboard_off = require('../images/dashboard.png')
+const products_on = require('../images/products-green.png')
+const products_off = require('../images/products.png')
+const settings_on = require('../images/settings-green.png')
+const settings_off = require('../images/settings.png')
+const store_on = require('../images/store-green.png')
+const store_off = require('../images/store.png')
+const eye = require('../images/eye.png')
+
 
 const Template = ({children}) => (
       <div className="content">
@@ -24,11 +37,11 @@ const Template = ({children}) => (
         <Row className="show-grid">
           <Col md={2}>
             <Nav className="herp">
-              <NavItem eventKey={1} href="/">Dashboard</NavItem>
-              <NavItem eventKey={2} href="/products">Products</NavItem>
-              <NavItem eventKey={3} href="/store">Store</NavItem>
-              <NavItem eventKey={4} href="/analytics">Analytics</NavItem>
-              <NavItem eventKey={5} href="/settings">Settings</NavItem>
+              <NavItem eventKey={1} href="/"><img src={dashboard_off} />Dashboard</NavItem>
+              <NavItem eventKey={2} href="/products"><img src={products_off} />Products</NavItem>
+              <NavItem eventKey={3} href="/store"><img src={store_off} />Store</NavItem>
+              <NavItem eventKey={4} href="/analytics"><img src={analytics_off} />Analytics</NavItem>
+              <NavItem eventKey={5} href="/settings"><img src={settings_off} />Settings</NavItem>
             </Nav>
           </Col>
 
