@@ -88,7 +88,7 @@ class Dashboard extends Component {
               </Col>
             </Row>
 
-            <p> Have a question about Merchify? Check out our FAQ <a href="/">here</a> </p>
+            <p className="faqs"> Have a question about Merchify? Check out our FAQ <a href="/">here</a> </p>
           </Grid>
         </Template>
       </div>
