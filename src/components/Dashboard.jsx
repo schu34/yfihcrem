@@ -50,12 +50,7 @@ var blogs = my_blogs.map(function(val){ return blog_template(val)})
 class Dashboard extends Component {
   render() {
     return (
-<<<<<<< HEAD
       <div>
-=======
-      <div className="full-height">
-        <Template location={this.props.location}>
->>>>>>> ec8a9146698eb9c55b516630cf0febf04e15b35d
           <Grid>
             <Row className="show-grid">
               <Col md={4}>
