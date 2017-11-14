@@ -3,6 +3,12 @@ html, body, #app, #app>div {
   color: #939393;
 }
 
+a, a:hover, a:visited{
+    color: #8BC34A;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
 .App {
   text-align: center;
 }
