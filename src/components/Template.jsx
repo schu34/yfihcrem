@@ -21,6 +21,7 @@ const settings_off = require('../images/settings.png')
 const store_on = require('../images/store-green.png')
 const store_off = require('../images/store.png')
 const eye = require('../images/eye.png')
+const logo = require('../images/logo2.png')
 
 
 const Template = ({children, location}) => (
@@ -28,16 +29,16 @@ const Template = ({children, location}) => (
       <div className="content">
       {console.log(location)}
 
-        <Navbar>
+        <Navbar fluid>
          <Navbar.Header>
            <Navbar.Brand>
-             <a href="/dashboard">Merchify</a>
+             <a href="/dashboard"><img src={logo} className="nav-logo" /></a>
            </Navbar.Brand>
          </Navbar.Header>
         </Navbar>
 
         <Row className="show-grid">
-          <Col md={2}>
+          <Col md={2} className="sidebar">
             <Nav className="herp">
               <NavItem eventKey={1} href="/dashboard"><img src={location.pathname.split("/")[1] === 'dashboard' ? dashboard_on: dashboard_off} />Dashboard</NavItem>
               <NavItem eventKey={2} href="/products"><img src={location.pathname.split("/")[1] === 'products' ? products_on : products_off} />Products</NavItem>

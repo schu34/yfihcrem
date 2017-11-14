@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Grid>
+        <Grid fluid className="no-padding main-container">
           <Switch>
             <Route path="/login" component={Login} />
             <Route path="/signup" component={Signup} />
