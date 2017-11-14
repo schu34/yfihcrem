@@ -22,6 +22,7 @@ import Store from "./Store";
 import Products from "./Products";
 import Analytics from "./Analytics";
 import Settings from "./Settings";
+import Template from "./Template"
 
 //css
 import "bootstrap/dist/css/bootstrap.css";
@@ -36,12 +37,14 @@ class App extends Component {
             <Route path="/login" component={Login} />
             <Route path="/signup" component={Signup} />
             <Route path="/forgotPassword" component={ForgotPassword} />
-            <Route path="/dashboard" component={Dashboard} />
-            <Route path="/:storeId" component={Store} />
-            <Route path="/:storeId/:productId" component={Products} />
-            <Route path="/analytics" component={Analytics} />
-            <Route path="/settings" component={Settings} />
-            <Route path="/products" component={Products} />
+            <Route path="/dashboard" component={Template} />
+            <Route path="/analytics" component={Template} />
+            <Route path="/settings" component={Template} />
+            <Route path="/products" component={Template} />
+            <Route path="/store" component={Template} />
+            
+            {/* <Route path="/:storeId" component={Store} /> */}
+            {/* <Route path="/:storeId/:productId" component={Products} /> */}
           </Switch>
         </Grid>
       </Router>

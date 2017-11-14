@@ -51,7 +51,6 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
-        <Template location={this.props.location}>
           <Grid>
 
             <Row className="show-grid">
@@ -91,7 +90,6 @@ class Dashboard extends Component {
 
             <p> Have a question about Merchify? Check out our FAQ <a href="/">here</a> </p>
           </Grid>
-        </Template>
       </div>
     );
   }

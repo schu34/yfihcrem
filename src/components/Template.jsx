@@ -9,6 +9,13 @@ import { Nav,
         Col
         }                  from 'react-bootstrap';
 
+import {Switch, Route} from "react-router"
+import Dashboard from "./Dashboard";
+import Products from "./Products";
+import Store from "./Store";
+import Analytics from "./Analytics";
+import Settings from "./Settings";
+
 //images
 const analytics_on = require('../images/analytics-green.png')
 const analytics_off = require('../images/analytics.png')
@@ -49,7 +56,15 @@ const Template = ({children, location}) => (
           </Col>
 
           <Col md={6}>
-            <div>{children}</div>
+            <div>
+              <Switch>
+                <Route path="/dashboard" component={Dashboard} /> 
+                <Route path="/products" component={Products} /> 
+                <Route path="/store" component={Store} /> 
+                <Route path="/analytics" component={Analytics} /> 
+                <Route path="/settings" component={Settings} /> 
+              </Switch>
+            </div>
           </Col>
         </Row>
 

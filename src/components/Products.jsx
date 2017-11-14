@@ -29,7 +29,6 @@ class Products extends Component {
   render() {
     return (
     <div>
-      <Template location={this.props.location}>
 
       <BootstrapTable data={products} striped hover insertRow>
         <TableHeaderColumn isKey dataField='id'></TableHeaderColumn>
@@ -37,7 +36,6 @@ class Products extends Component {
         <TableHeaderColumn dataField='price'></TableHeaderColumn>
       </BootstrapTable>
 
-      </Template>
     </div>
     );
   }

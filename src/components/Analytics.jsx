@@ -5,13 +5,11 @@ class Analytics extends Component {
   render() {
     return (
       <div>
-        <Template>
 
           <div>
             <h1>Analytics</h1>
           </div>
 
-        </Template>
       </div>
     );
   }
