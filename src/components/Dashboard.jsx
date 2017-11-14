@@ -51,7 +51,7 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
-        <Template>
+        <Template location={this.props.location}>
           <Grid>
 
             <Row className="show-grid">

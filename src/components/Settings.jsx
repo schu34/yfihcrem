@@ -5,7 +5,7 @@ class Settings extends Component {
   render() {
     return (
       <div>
-        <Template>
+        <Template location={this.props.location}>
 
           <div>
             <h1>Settings</h1>

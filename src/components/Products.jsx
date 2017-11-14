@@ -25,11 +25,11 @@ var products = [{
   }];
 
 
-class Product extends Component {
+class Products extends Component {
   render() {
     return (
     <div>
-      <Template>
+      <Template location={this.props.location}>
 
       <BootstrapTable data={products} striped hover insertRow>
         <TableHeaderColumn isKey dataField='id'></TableHeaderColumn>
@@ -43,4 +43,4 @@ class Product extends Component {
   }
 }
 
-export default Product;
+export default Products;
