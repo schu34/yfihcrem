@@ -89,3 +89,8 @@ nav{
 .faqs{
   text-align: center;
 }
+
+.sidebar-settings{
+  position: fixed !important;
+  bottom: 0;
+}
