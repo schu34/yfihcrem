@@ -213,3 +213,20 @@ nav{
     font-size: 18px !important;
   }
 }
+
+@media only screen and (max-width: 830px) {
+  .navbar-default .navbar-brand{
+    margin: auto;
+    display: block;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .navbar-brand > img{
+    margin: auto;
+  }
+}
+
+
+
