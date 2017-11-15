@@ -9,6 +9,10 @@ a, a:hover, a:visited{
     text-decoration: none !important;
 }
 
+input, input:focus, input:active{
+  outline: none !important;
+}
+
 .App {
   text-align: center;
 }
@@ -79,7 +83,7 @@ nav{
 }
 
 .full-height{
-  height: 100%;
+  height: calc(100% - 28px);
 }
 
 .sidebar-active{
