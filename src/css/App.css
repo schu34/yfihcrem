@@ -4,9 +4,9 @@ html, body, #app, #app>div {
 }
 
 a, a:hover, a:visited{
-    color: #8BC34A;
-    font-weight: bold;
-    text-decoration: none !important;
+  color: #8BC34A;
+  font-weight: bold;
+  text-decoration: none !important;
 }
 
 input, input:focus, input:active{
@@ -54,6 +54,11 @@ input, input:focus, input:active{
 .navbar{
   margin-bottom: 0px !important;
   height: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 nav{
@@ -66,12 +71,15 @@ nav{
   background-color: #F2F2F2;
   padding: 10px 0px 0px 20px;
   width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 55px;
 }
 
 .sidebar img{
   width: 20px;
   margin-right: 10px;
-
 }
 
 .view-site{
@@ -107,15 +115,34 @@ nav{
   bottom: 0;
 }
 
+.main-area{
+  padding: 10vh 10vw 1vh 10vw;
+  padding: 10vh 10vw 1vh 10vw;
+  left: 0;
+  margin-left: 220px;
+  margin-top: 55px;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 830px) {
-.view-site{
-  display: none;
+  .main-area{
+      margin-left: 0px !important;
+  }
 }
+
+
+@media only screen and (max-width: 830px) {
+  .view-site{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 830px) {
-.sidebar{
-  display: none;
-}
+  .sidebar{
+    display: none;
+  }
 }

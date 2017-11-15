@@ -58,9 +58,9 @@ const Template = ({children, location}) => (
             </Nav>
           </Col>
 
-          <Col md={6}>
+          <Col md={10} className="main-area">
             <div>
-              <Switch>
+              <Switch fluid>
                 <Route path="/dashboard" component={Dashboard} /> 
                 <Route path="/products" component={Products} /> 
                 <Route path="/store" component={Store} /> 
