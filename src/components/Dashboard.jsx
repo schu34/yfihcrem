@@ -52,9 +52,9 @@ class Dashboard extends Component {
     return (
       <div>
           <Grid>
-            <Row className="show-grid">
+            <Row className="show-grid dash-greeting">
               <Col md={4}>
-                <p className="dash-greeting">Good Afternoon, {name}</p>
+                <p>Good Afternoon, {name}</p>
               </Col>
 
               <Col md={2}>

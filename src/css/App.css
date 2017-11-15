@@ -130,6 +130,7 @@ nav{
 /* Dasboard Classes */
 .dash-greeting{
   font-size: 20px;
+  margin-bottom: 50px;
 }
 
 .dash-head-statistics{
@@ -137,6 +138,7 @@ nav{
   text-align: center;
   color: #8BC34A;
   font-weight: 500;
+  margin-top: -5px;
 }
 .dash-head-statistics-label{
   font-size: 14px;
