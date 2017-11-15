@@ -190,3 +190,16 @@ nav{
     display: none;
   }
 }
+
+
+@media only screen and (max-width: 830px) {
+  .dash-head-statistics{
+    font-size: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .dash-head-statistics-label{
+    font-size: 18px !important;
+  }
+}
