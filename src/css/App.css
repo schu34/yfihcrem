@@ -6,6 +6,7 @@ html, body, #app, #app>div {
   color: #939393;
   background: #f8f8f8;
   -webkit-font-smoothing: antialiased;
+  font-size: 16px;
 }
 
 a, a:hover, a:visited{
