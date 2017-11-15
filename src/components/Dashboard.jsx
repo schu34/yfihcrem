@@ -56,6 +56,7 @@ class Dashboard extends Component {
             <Row className="show-grid dash-greeting">
               <Col sm={6}>
                 <p>Good Afternoon, {name}</p>
+                <p className="dash-sub-greeting">Here is what's going on today</p>
               </Col>
 
               <Col sm={3}>
