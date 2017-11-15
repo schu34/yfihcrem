@@ -17,20 +17,21 @@ import                                               '../css/App.css';
 const analytics_on = require('../images/analytics-green.png')
 const analytics_off = require('../images/analytics.png')
 const dashboard_on = require('../images/dashboard-green.png')
+const example = require('../images/example.jpg')
 
 const five = 5;
 const name = "Matt";
 const visits = 2331;
 const sales = 331;
 const my_array = [
-  {"item":"Hoodie", "quantity":"1222", "image":analytics_on},
-  {"item":"Tshirt", "quantity":"947", "image":analytics_off},
+  {"item":"Hoodie", "quantity":"1222", "image":example},
+  {"item":"Tshirt", "quantity":"947", "image":example},
 ]
 
 const my_blogs = [
-{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":analytics_on},
-{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":analytics_on},
-{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":analytics_on}
+{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":example},
+{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":example},
+{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":example}
 ]
 
 const right_side_text = `Some widget of some sort? Maybe blog post?`
@@ -38,8 +39,8 @@ const right_side_text = `Some widget of some sort? Maybe blog post?`
 
 function blog_template(val){
   return(
-  <div>
-    <p> <img src={val["image"]} /> {val["title"]} </p>
+  <div className="dash-card">
+    <img src={val["image"]} /> {val["title"]}
     <p> {val["description"]} </p>
   </div>)
 }
@@ -51,27 +52,28 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
-          <Grid>
-            <Row className="show-grid">
-              <Col md={4}>
+          <Grid className="full-width">
+            <Row className="show-grid dash-greeting">
+              <Col sm={6}>
                 <p>Good Afternoon, {name}</p>
+                <p className="dash-sub-greeting">Here is what's going on today</p>
               </Col>
 
-              <Col md={2}>
-                <p>{visits}</p>
-                <p>Todays Visits</p>
+              <Col sm={3}>
+                <p className="dash-head-statistics">{visits}</p>
+                <p className="dash-head-statistics-label">Todays Visits</p>
               </Col>
 
-              <Col md={2}>
-                <p>${sales}</p>
-                <p>Todays Sales</p>
+              <Col sm={3}>
+                <p className="dash-head-statistics">${sales}</p>
+                <p className="dash-head-statistics-label">Todays Sales</p>
               </Col>
 
             </Row>
 
 
-            <Row className="show-grid">
-              <Col md={6}>
+            <Row className="show-grid dash-card">
+              <Col md={12}>
                 <div>
                   <p>Your top selling products</p>
                   {best_items}
@@ -80,11 +82,9 @@ class Dashboard extends Component {
             </Row>
 
             <Row className="show-grid">
-              <Col md={6}>
                 <div>
                   {blogs}
                 </div>
-              </Col>
             </Row>
 
             <p className="faqs"> Have a question about Merchify? Check out our FAQ <a href="/">here</a> </p>

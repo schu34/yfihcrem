@@ -1,12 +1,18 @@
+/* Merchify.co */
+
+/* Global Classes */
 html, body, #app, #app>div {
   height: 100%;
   color: #939393;
+  background: #f8f8f8;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
 }
 
 a, a:hover, a:visited{
-    color: #8BC34A;
-    font-weight: bold;
-    text-decoration: none !important;
+  color: #8BC34A;
+  font-weight: bold;
+  text-decoration: none !important;
 }
 
 input, input:focus, input:active{
@@ -47,13 +53,18 @@ input, input:focus, input:active{
 }
 
 .nav-logo{
-  width: 115px;
+  width: 130px;
   margin-top: -2px;
 }
 
 .navbar{
   margin-bottom: 0px !important;
   height: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 nav{
@@ -64,20 +75,31 @@ nav{
 .sidebar{
   height: 100%;
   background-color: #F2F2F2;
-  padding: 10px 0px 0px 20px;
+  padding: 15px 0px 0px 20px;
   width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 55px;
 }
 
 .sidebar img{
   width: 20px;
   margin-right: 10px;
+}
 
+.view-site{
+  width: 20px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .sidebar a{
   color: #939393;
   font-weight: bold;
   line-height: 25px;
+  padding: 5px 0px 15px 5px !important;
 }
 .main-container{
   height: 100%;
@@ -99,3 +121,120 @@ nav{
   position: fixed !important;
   bottom: 0;
 }
+
+.main-area{
+  padding: 5vh 10vw 1vh 10vw;
+  left: 0;
+  margin-left: 220px;
+  margin-top: 55px;
+}
+
+.full-width{
+  width: 100% !important;
+  max-width: 900px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active{
+  background-color: transparent;
+  color: #8BC34A;
+}
+
+
+/* Dasboard Classes ________________________________________________________________________*/
+.dash-greeting{
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.dash-head-statistics{
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+  margin-top: -5px;
+}
+
+.dash-head-statistics-label{
+  font-size: 16px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.dash-card{
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  padding: 20px 5px 20px 5px;
+  -webkit-box-shadow: 0 0 0 1px rgba(63,63,68,0.05), 0px 1px 2px 0px rgba(63,63,68,0.15);
+}
+
+.dash-sub-greeting{
+  font-size: 16px;
+  margin-top: -15px;
+  color: #000;
+}
+
+/* Products Classes ________________________________________________________________________*/
+/* Store Classes ________________________________________________________________________*/
+/* Analytics Classes ________________________________________________________________________*/
+/* Settings Classes ________________________________________________________________________*/
+
+
+/* Responsiveness Classes ________________________________________________________________________*/
+@media only screen and (max-width: 830px) {
+  .main-area{
+    margin-left: 0px !important;
+  }
+}
+
+
+@media only screen and (max-width: 830px) {
+  .view-site{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .sidebar{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .dash-head-statistics{
+    font-size: 50px !important;
+    text-align: center !important;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .dash-greeting{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .dash-head-statistics-label{
+    font-size: 18px !important;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .navbar-default .navbar-brand{
+    margin: auto;
+    display: block;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .navbar-brand > img{
+    margin: auto;
+    width: 120px;
+  }
+}
+
+
+
