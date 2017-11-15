@@ -40,7 +40,7 @@ const right_side_text = `Some widget of some sort? Maybe blog post?`
 function blog_template(val){
   return(
   <div className="dash-card">
-    <p> <img src={val["image"]} /> {val["title"]} </p>
+    <img src={val["image"]} /> {val["title"]}
     <p> {val["description"]} </p>
   </div>)
 }
@@ -81,11 +81,9 @@ class Dashboard extends Component {
             </Row>
 
             <Row className="show-grid">
-              <Col md={12}>
                 <div>
                   {blogs}
                 </div>
-              </Col>
             </Row>
 
             <p className="faqs"> Have a question about Merchify? Check out our FAQ <a href="/">here</a> </p>
