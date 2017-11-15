@@ -17,20 +17,21 @@ import                                               '../css/App.css';
 const analytics_on = require('../images/analytics-green.png')
 const analytics_off = require('../images/analytics.png')
 const dashboard_on = require('../images/dashboard-green.png')
+const example = require('../images/example.jpg')
 
 const five = 5;
 const name = "Matt";
 const visits = 2331;
 const sales = 331;
 const my_array = [
-  {"item":"Hoodie", "quantity":"1222", "image":analytics_on},
-  {"item":"Tshirt", "quantity":"947", "image":analytics_off},
+  {"item":"Hoodie", "quantity":"1222", "image":example},
+  {"item":"Tshirt", "quantity":"947", "image":example},
 ]
 
 const my_blogs = [
-{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":analytics_on},
-{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":analytics_on},
-{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":analytics_on}
+{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":example},
+{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":example},
+{"description":"Some Blurp about the post, something very cool", "title":"Blog Post Here", "image":example}
 ]
 
 const right_side_text = `Some widget of some sort? Maybe blog post?`
