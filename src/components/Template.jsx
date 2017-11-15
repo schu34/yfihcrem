@@ -9,6 +9,8 @@ import { Nav,
         Col
         }                  from 'react-bootstrap';
 
+import {LinkContainer} from "react-router-bootstrap";
+
 import {Switch, Route} from "react-router"
 import Dashboard from "./Dashboard";
 import Products from "./Products";
@@ -47,11 +49,11 @@ const Template = ({children, location}) => (
         <Row className="show-grid full-height">
           <Col xs={2} className="sidebar">
             <Nav className="herp">
-              <NavItem eventKey={1} href="/dashboard"><img src={location.pathname.split("/")[1] === 'dashboard' ? dashboard_on: dashboard_off} />Dashboard</NavItem>
-              <NavItem eventKey={2} href="/products"><img src={location.pathname.split("/")[1] === 'products' ? products_on : products_off} />Products</NavItem>
-              <NavItem eventKey={3} href="/store"><img src={location.pathname.split("/")[1] === 'store' ? store_on : store_off} />Store</NavItem>
-              <NavItem eventKey={4} href="/analytics"><img src={location.pathname.split("/")[1] === 'analytics' ? analytics_on: analytics_off} />Analytics</NavItem>
-              <NavItem eventKey={5} href="/settings" className="sidebar-settings"><img src={location.pathname.split("/")[1] === 'settings' ? settings_on : settings_off} />Settings</NavItem>
+              <LinkContainer to="/dashboard"><NavItem eventKey={1} ><img src={location.pathname.split("/")[1] === 'dashboard' ? dashboard_on: dashboard_off} />Dashboard</NavItem></LinkContainer>
+              <LinkContainer to="/products"><NavItem eventKey={2} ><img src={location.pathname.split("/")[1] === 'products' ? products_on : products_off} />Products</NavItem></LinkContainer>
+              <LinkContainer to="/store"><NavItem eventKey={3} ><img src={location.pathname.split("/")[1] === 'store' ? store_on : store_off} />Store</NavItem></LinkContainer>
+              <LinkContainer to="/analytics"><NavItem eventKey={4} ><img src={location.pathname.split("/")[1] === 'analytics' ? analytics_on: analytics_off} />Analytics</NavItem></LinkContainer>
+              <LinkContainer to="/settings"><NavItem eventKey={5} className="sidebar-settings"><img src={location.pathname.split("/")[1] === 'settings' ? settings_on : settings_off} />Settings</NavItem></LinkContainer>
             </Nav>
           </Col>
 
