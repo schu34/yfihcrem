@@ -51,7 +51,7 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
-          <Grid>
+          <Grid className="full-width">
             <Row className="show-grid dash-greeting">
               <Col md={4}>
                 <p>Good Afternoon, {name}</p>
