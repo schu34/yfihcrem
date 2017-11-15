@@ -39,7 +39,7 @@ const right_side_text = `Some widget of some sort? Maybe blog post?`
 
 function blog_template(val){
   return(
-  <div>
+  <div className="dash-card">
     <p> <img src={val["image"]} /> {val["title"]} </p>
     <p> {val["description"]} </p>
   </div>)
@@ -72,7 +72,7 @@ class Dashboard extends Component {
 
 
             <Row className="show-grid dash-card">
-              <Col md={6}>
+              <Col md={12}>
                 <div>
                   <p>Your top selling products</p>
                   {best_items}
@@ -80,8 +80,8 @@ class Dashboard extends Component {
               </Col>
             </Row>
 
-            <Row className="show-grid dash-card">
-              <Col md={6}>
+            <Row className="show-grid">
+              <Col md={12}>
                 <div>
                   {blogs}
                 </div>
