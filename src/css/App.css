@@ -1,3 +1,6 @@
+/* Merchify.co */
+
+/* Global Classes */
 html, body, #app, #app>div {
   height: 100%;
   color: #939393;
@@ -123,9 +126,28 @@ nav{
   margin-top: 55px;
 }
 
-.dashboard-greeting{
+
+/* Dasboard Classes */
+.dash-greeting{
   font-size: 20px;
 }
+
+.dash-head-statistics{
+  font-size: 20px;
+  text-align: center;
+}
+.dash-head-statistics-label{
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
 

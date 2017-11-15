@@ -54,17 +54,17 @@ class Dashboard extends Component {
           <Grid>
             <Row className="show-grid">
               <Col md={4}>
-                <p className="dashboard-greeting">Good Afternoon, {name}</p>
+                <p className="dash-greeting">Good Afternoon, {name}</p>
               </Col>
 
               <Col md={2}>
-                <p>{visits}</p>
-                <p>Todays Visits</p>
+                <p className="dash-head-statistics">{visits}</p>
+                <p className="dash-head-statistics-label">Todays Visits</p>
               </Col>
 
               <Col md={2}>
-                <p>${sales}</p>
-                <p>Todays Sales</p>
+                <p  className="dash-head-statistics">${sales}</p>
+                <p className="dash-head-statistics-label">Todays Sales</p>
               </Col>
 
             </Row>
