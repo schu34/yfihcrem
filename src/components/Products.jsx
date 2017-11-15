@@ -30,10 +30,10 @@ class Products extends Component {
     return (
     <div>
 
-      <BootstrapTable data={products} striped hover insertRow>
-        <TableHeaderColumn isKey dataField='id'></TableHeaderColumn>
-        <TableHeaderColumn dataField='name'></TableHeaderColumn>
-        <TableHeaderColumn dataField='price'></TableHeaderColumn>
+      <BootstrapTable data={products} striped>
+        <TableHeaderColumn isKey dataField='id'>Image</TableHeaderColumn>
+        <TableHeaderColumn dataField='name'>Product</TableHeaderColumn>
+        <TableHeaderColumn dataField='price'># Sold</TableHeaderColumn>
       </BootstrapTable>
 
     </div>
