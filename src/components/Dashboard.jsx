@@ -53,16 +53,16 @@ class Dashboard extends Component {
       <div>
           <Grid className="full-width">
             <Row className="show-grid dash-greeting">
-              <Col md={4}>
+              <Col sm={8}>
                 <p>Good Afternoon, {name}</p>
               </Col>
 
-              <Col md={2}>
+              <Col sm={2}>
                 <p className="dash-head-statistics">{visits}</p>
                 <p className="dash-head-statistics-label">Todays Visits</p>
               </Col>
 
-              <Col md={2}>
+              <Col sm={2}>
                 <p  className="dash-head-statistics">${sales}</p>
                 <p className="dash-head-statistics-label">Todays Sales</p>
               </Col>

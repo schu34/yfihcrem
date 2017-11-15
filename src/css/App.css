@@ -130,17 +130,18 @@ nav{
 
 .full-width{
   width: 100% !important;
+  max-width: 900px;
 }
 
 
-/* Dasboard Classes */
+/* Dasboard Classes ________________________________________________________________________*/
 .dash-greeting{
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 50px;
 }
 
 .dash-head-statistics{
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   color: #8BC34A;
   font-weight: 500;
@@ -148,7 +149,7 @@ nav{
 }
 
 .dash-head-statistics-label{
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   margin-top: -10px;
 }
@@ -174,7 +175,7 @@ nav{
 
 @media only screen and (max-width: 830px) {
   .main-area{
-      margin-left: 0px !important;
+    margin-left: 0px !important;
   }
 }
 
@@ -191,10 +192,18 @@ nav{
   }
 }
 
-
 @media only screen and (max-width: 830px) {
   .dash-head-statistics{
     font-size: 50px !important;
+    text-align: center !important;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .dash-greeting{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
 
