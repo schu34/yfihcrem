@@ -42,6 +42,7 @@ const Template = ({children, location}) => (
              <a href="/dashboard"><img src={logo} className="nav-logo" /></a>
            </Navbar.Brand>
          </Navbar.Header>
+              <a href="/dashboard"><img src={eye} className="view-site" /></a>
         </Navbar>
 
         <Row className="show-grid full-height">

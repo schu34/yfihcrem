@@ -74,6 +74,13 @@ nav{
 
 }
 
+.view-site{
+  width: 20px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
 .sidebar a{
   color: #939393;
   font-weight: bold;
@@ -98,4 +105,17 @@ nav{
 .sidebar-settings{
   position: fixed !important;
   bottom: 0;
+}
+
+
+@media only screen and (max-width: 830px) {
+.view-site{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 830px) {
+.sidebar{
+  display: none;
+}
 }
