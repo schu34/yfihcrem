@@ -117,13 +117,15 @@ nav{
 }
 
 .main-area{
-  padding: 10vh 10vw 1vh 10vw;
-  padding: 10vh 10vw 1vh 10vw;
+  padding: 5vh 10vw 1vh 10vw;
   left: 0;
   margin-left: 220px;
   margin-top: 55px;
 }
 
+.dashboard-greeting{
+  font-size: 20px;
+}
 
 
 

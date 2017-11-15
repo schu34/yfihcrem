@@ -54,7 +54,7 @@ class Dashboard extends Component {
           <Grid>
             <Row className="show-grid">
               <Col md={4}>
-                <p>Good Afternoon, {name}</p>
+                <p className="dashboard-greeting">Good Afternoon, {name}</p>
               </Col>
 
               <Col md={2}>
