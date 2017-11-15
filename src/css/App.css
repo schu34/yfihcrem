@@ -140,12 +140,20 @@ nav{
   font-weight: 500;
   margin-top: -5px;
 }
+
 .dash-head-statistics-label{
   font-size: 14px;
   text-align: center;
   margin-top: -10px;
 }
 
+.dash-card{
+  background-color: #fff;
+  border-radius: 4px;
+  border: #f8f8f8 solid 2px;
+  margin-bottom: 50px;
+  padding: 20px 5px 20px 5px;
+}
 
 
 

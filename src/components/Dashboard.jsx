@@ -70,7 +70,7 @@ class Dashboard extends Component {
             </Row>
 
 
-            <Row className="show-grid">
+            <Row className="show-grid dash-card">
               <Col md={6}>
                 <div>
                   <p>Your top selling products</p>
@@ -79,7 +79,7 @@ class Dashboard extends Component {
               </Col>
             </Row>
 
-            <Row className="show-grid">
+            <Row className="show-grid dash-card">
               <Col md={6}>
                 <div>
                   {blogs}
