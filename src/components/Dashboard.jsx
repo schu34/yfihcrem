@@ -65,7 +65,7 @@ class Dashboard extends Component {
               </Col>
 
               <Col sm={3}>
-                <p  className="dash-head-statistics">${sales}</p>
+                <p className="dash-head-statistics">${sales}</p>
                 <p className="dash-head-statistics-label">Todays Sales</p>
               </Col>
 
