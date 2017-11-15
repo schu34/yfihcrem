@@ -69,7 +69,7 @@ nav{
 .sidebar{
   height: 100%;
   background-color: #F2F2F2;
-  padding: 10px 0px 0px 20px;
+  padding: 15px 0px 0px 20px;
   width: 200px;
   position: fixed;
   top: 0;
@@ -93,6 +93,7 @@ nav{
   color: #939393;
   font-weight: bold;
   line-height: 25px;
+  padding: 5px 0px 15px 5px !important;
 }
 .main-container{
   height: 100%;
