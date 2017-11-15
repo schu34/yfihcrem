@@ -53,7 +53,7 @@ input, input:focus, input:active{
 }
 
 .nav-logo{
-  width: 115px;
+  width: 130px;
   margin-top: -2px;
 }
 
@@ -225,6 +225,7 @@ nav{
 @media only screen and (max-width: 830px) {
   .navbar-brand > img{
     margin: auto;
+    width: 120px;
   }
 }
 
